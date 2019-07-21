@@ -1,0 +1,58 @@
+body {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: #fff;
+  }
+#jumbotron{
+  background: #BA8B02;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #181818, #BA8B02);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #181818, #BA8B02); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+}
+
+#card{
+  border: 2px solid rgba(186, 140, 2, 0.383);
+  margin-top: 5px;
+  min-height: 70px;
+  font-size: 20px;background-color: rgba(255, 255, 255, 0.178);
+}
+#readmore{
+  color: rgb(67, 205, 246)
+}
+  main {
+    flex: 1 0 auto;
+  }
+  .articleBody {
+    height: 200px;
+    font-size: 20px;
+    overflow-y: scroll;
+    line-height: 150%;
+  }   
+  #btnSignUp {
+    background-color: #635f60;
+  }
+  #nameComment {
+    /*border-bottom: 2px solid #ec407a;*/
+    font-weight: bold;
+    background: #635f60;
+    color: white;
+  }
+  .input-field input[type="text"]:focus + label {
+    color: #635f60;
+  }
+  .input-field input[type="text"]:focus {
+    border-bottom: 1px solid #635f60;
+    box-shadow: 0 1px 0 0 #000;
+  }
+  .input-field .prefix.active {
+    color: #635f60;
+  }
+  .topnav {
+    background-color: #635f60;
+  }

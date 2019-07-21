@@ -85,7 +85,7 @@ router.get("/clearAll", function(req, res) {
       console.log("removed all articles");
     }
   });
-  res.redirect("/articles-json");
+  res.redirect("/articles");
 });
 
 router.get("/readArticle/:id", function(req, res) {
