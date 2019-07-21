@@ -1,9 +1,9 @@
 const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
-
 const axios = require("axios");
 const cheerio = require("cheerio");
+const exphbs = require("express-handlebars");
 
 // Require all models
 const db = require("./models");
@@ -25,7 +25,14 @@ app.use(express.static("public"));
 
 // Routes
 
-// A GET route for scraping the NYT Movie News website
+// Handlebars
+app.engine(
+  "handlebars",
+  exphbs({
+    defaultLayout: "main"
+  })
+);
+app.set("view engine", "handlebars");
 
 // Connect to the Mongo DB
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/scraperdb";
