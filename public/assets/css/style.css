@@ -4,10 +4,10 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    background: #000000;  /* fallback for old browsers */
+
 background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-color: #fff;
+color: rgb(221, 218, 218);
   }
 #jumbotron{
   background: #BA8B02;  /* fallback for old browsers */
@@ -20,7 +20,8 @@ color: #fff;
   border: 2px solid rgba(186, 140, 2, 0.383);
   margin-top: 5px;
   min-height: 70px;
-  font-size: 20px;background-color: rgba(255, 255, 255, 0.178);
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.178);
 }
 #readmore{
   color: rgb(67, 205, 246)
@@ -29,22 +30,27 @@ color: #fff;
     flex: 1 0 auto;
   }
   .articleBody {
-    height: 200px;
+    height: 250px;
     font-size: 20px;
     overflow-y: scroll;
     line-height: 150%;
+    background-color: rgba(241, 233, 233, 0.308);
+    
   }   
-  #btnSignUp {
-    background-color: #635f60;
-  }
+ 
   #nameComment {
     /*border-bottom: 2px solid #ec407a;*/
     font-weight: bold;
     background: #635f60;
-    color: white;
+    
+  }
+  .input-field input[type="text"]{
+    color: #000;
+    min-width: 400px;
+    min-height: 50px;
   }
   .input-field input[type="text"]:focus + label {
-    color: #635f60;
+    color: #000000;
   }
   .input-field input[type="text"]:focus {
     border-bottom: 1px solid #635f60;
