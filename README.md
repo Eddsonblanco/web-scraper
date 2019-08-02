@@ -5,14 +5,14 @@ App that lets users view and leave comments on the latest news. But you're not g
 Remember
  Run `npm init`. When that's finished, install and save these npm packages:
  
-  `1. express
+1. express
 
-   2. express-handlebars
+2. express-handlebars
 
-   3. mongoose
+3. mongoose
 
-   4. cheerio
+4. cheerio
 
-   5. axio
+5. axio
 
 https://blooming-forest-23700.herokuapp.com/articles
